@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* SPREČAVANJE HORIZONTALNOG SCROLL-A */
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+/* UVOĐENJE FONTA I  POSTAVLJANJE POZADINSKE SLIKE */
+body {
+    font-family: 'ABeeZee', sans-serif;
+    background-image: url('../img/pozadina.jpg');
+}
+
+/* DIV KOJI SADRŽI SLIKU LOGO-a */
+#logo{
+    text-align: center;
+    background-color: #F1D9E7;
+    border: none;
+    outline: none;
+}
+
+#logo a{
+    border: none !important;
+    outline: none;
+}
+
+#logo a:visited{
+    border: none !important;
+}
+
+/* DIV NAVIGACIJA */
+.nav {
+    border-bottom: 1px solid #B83E74;   
+    text-align: left;
+    height: 4em;
+    line-height: 4em;
+    background-color: #F1D9E7;
+}
+
+.meni{
+    text-align: center;
+}
+
+.meni a { /* STAVKE (LINKOVI) U NAVIGACIJI */
+    text-decoration: none;
+    color: #B83E74;
+    padding: 1em;
+    line-height: 4em;
+    clear: right;
+}
+
+.meni a:hover {
+    color: #8F0051;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%; 
+}
+
+.active{
+    background-color: rgba(255,255,255,0.3) !important; 
+    border-radius: 50% !important;
+    color: #8F0051 !important;
+}
+
+
+/* NEVIDLJIVA LABELA I HAMB-MENI */
+#labela {  
+    display: none;  
+    float: right;
+}
+#hamb-meni {
+    display: none;
+}
+
+
+/* FOOTER */
+.footer{
+    border-top: 1px solid #B83E74;   
+    text-align: center;
+    height: auto;
+    line-height: 2.5em;
+    background-color: #F1D9E7;
+}
+
+.footer #drustveneMreze{
+    display: inline;
+}
+
+.footer ul li{
+    display: inline;
+}
+
+.footer ul li a{
+    border-right: 1px solid #B83E74;
+    padding: 0 1em;
+    text-decoration: none;
+    color: #B83E74;
+}
+
+.footer ul li a:hover{
+    color: #8F0051;
+}
+
+.footer p{
+    color: #8F0051;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.footer p a{
+    color: #8F0051;
+    text-decoration: none;
+}
+
+.footer p a:hover{
+    color: #B83E74;
+}
+
+.footer img{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 1em;
+    position: relative;
+    top: 3px;
+}
+
+.donjeSlike{
+    margin: 0 0.1em !important;
+}
+
+span{
+    border-left: 1px solid #B83E74;
+    padding-left: 1em;
+}
+
+/* MEDIJA UPITI */
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        height: auto;
+        min-height: 4em;
+        line-height: 4em;
+    }
+
+    #labela { 
+        display: block;
+        color: #B83E74;
+        margin-right: 1em;
+        font-size: 2em;
+        line-height: 2em;
+        cursor: pointer;
+    }
+
+    .meni {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #F1D9E7;
+    }
+
+    .meni a {
+        display: block;
+        border-bottom: 1px solid #B83E74;
+        padding: 0.1em;
+    }
+
+    .meni a:hover {
+        color: #8F0051;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 0%;
+    }
+
+    .active{
+        background-color: rgba(255,255,255,0.2) !important; 
+        border-radius: 0% !important;
+    }
+    
+    #hamb-meni:checked + .meni {
+        display: block !important;
+    }
+
+    .footer ul{
+        width:100%;
+        margin: 0;
+    }
+        
+}
+

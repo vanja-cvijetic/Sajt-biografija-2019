@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Galerija slika iz mog života.">
+    <meta name="keywords" content="galerija, slike">
+    <meta name="author" content="Vanja Cvijetić | NRT-29/17 | vanjaxcv@gmail.com">
+
+    <title>Vanja Cvijetić | Galerija</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/galerija.css">
+
+    <link rel="shortcut icon" href="img/cvet.ico">
+    <script src="js/galerija.js"></script>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <div id="logo">
+        <a href="index.html"><img src="img/logo.png" id="logo-img" 
+        alt="Vanja Cvijetić - logo" height="60px" width="300px"></a>  
+    </div>
+
+    <!-- NAVIGACIJA -->
+    <div class="nav">
+        <label for="hamb-meni" id="labela"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamb-meni">
+        
+        <div class="meni">      
+            <a href="index.html">Početna</a>
+            <a href="biografija.html">Biografija</a>
+            <a href="galerija.html" class="active">Galerija</a>
+            <a href="hobi.html">Hobi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- SADRŽAJ -->
+
+    <div id="naslovStrane">
+        <img src="img/cvet.png" alt="cvet" width="25px">
+        <h1>Galerija</h1>
+        <img src="img/cvet.png" alt="cvet" width="25px">
+    </div>
+
+    <!-- SLAJDER -->
+
+    <div class="containerSlajdera">
+
+        <input type="radio" name="slike" id="slika1" checked>
+        <input type="radio" name="slike" id="slika2">
+        <input type="radio" name="slike" id="slika3">
+        <input type="radio" name="slike" id="slika4">
+        <input type="radio" name="slike" id="slika5">
+        <input type="radio" name="slike" id="slika6">
+        <input type="radio" name="slike" id="slika7">
+
+        <div class="slikaUSlajderu" id="pic1">
+            <img src="img/galerija-1.jpg" alt="Vanja Cvijetić - Krakov">
+
+            <label for="slika12" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika2" class="sledeca"><i class="fas fa-angle-right"></i></label>
+            
+        </div>
+
+        <div class="slikaUSlajderu" id="pic2">
+            <img src="img/galerija-2.jpg" alt="Vanja Cvijetić - Vavel">
+
+            <label for="slika1" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika3" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="slikaUSlajderu" id="pic3">
+            <img src="img/galerija-3.JPG" alt="Vanja Cvijetić - plaža">
+
+            <label for="slika2" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika4" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="slikaUSlajderu" id="pic4">
+            <img src="img/galerija-4.JPG" alt="Vanja Cvijetić - Pefki, Grčka">
+
+            <label for="slika3" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika5" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="slikaUSlajderu" id="pic5">
+            <img src="img/galerija-5.jpg" alt="Vanja Cvijetić - most u Pragu">
+
+            <label for="slika4" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika6" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="slikaUSlajderu" id="pic6">
+            <img src="img/galerija-6.jpg" alt="Vanja Cvijetić - most u Pragu">
+
+            <label for="slika5" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika7" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="slikaUSlajderu" id="pic7">
+            <img src="img/galerija-7.jpg" alt="Vanja Cvijetić - Pariz">
+
+            <label for="slika6" class="prethnodna"><i class="fas fa-angle-left"></i></label>
+            <label for="slika8" class="sledeca"><i class="fas fa-angle-right"></i></label>
+        </div>
+
+        <div class="donjaNavigacija">
+            <label class="donjaNavLabela" id="tacka1" for="slika1"></label>
+            <label class="donjaNavLabela" id="tacka2" for="slika2"></label>
+            <label class="donjaNavLabela" id="tacka3" for="slika3"></label>
+            <label class="donjaNavLabela" id="tacka4" for="slika4"></label>
+            <label class="donjaNavLabela" id="tacka5" for="slika5"></label>
+            <label class="donjaNavLabela" id="tacka6" for="slika6"></label>
+            <label class="donjaNavLabela" id="tacka7" for="slika7"></label>
+        </div>
+
+    </div>
+
+    <!-- SLIČICE -->
+
+    <div class="container">
+       <div class="col-l-3 col-s-12 col-m-6">
+           <img src="img/galerija-1.jpg" alt="Vanja Cvijetić - Krakov">
+           <p>Krakov, Poljska - glavni trg.</p>
+       </div>
+       <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-2.jpg" alt="Vanja Cvijetić - Vavel">
+            <p>Krakov, Poljska - brdo Vavel.</p>
+        </div>
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-3.JPG" alt="Vanja Cvijetić - Pefki">
+            <p>Pefki, Grčka - plaža.</p>
+        </div>
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-4.JPG" alt="Vanja Cvijetić - Plaža">
+            <p>Pefki, Grčka - sumrak.</p>
+        </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <div class="container">
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-5.jpg" alt="Vanja Cvijetić - Prag">
+            <p>Prag, Češka - most.</p>
+        </div>
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-6.jpg" alt="Vanja Cvijetić - Most u Pragu">
+            <p>Prag, Češka - most.</p>
+        </div>
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-7.jpg" alt="Vanja Cvijetić - Pariz">
+            <p>Pariz, Francuska - pogled.</p>
+        </div>
+        <div class="col-l-3 col-s-12 col-m-6">
+            <img src="img/galerija-8.JPG" alt="Vanja Cvijetić - Višegrad">
+            <p>Višegrad, Bosna - most na Drini.</p>
+        </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <img src="img/cvet.png" alt="cvet" height="18px" width="18px">
+        
+        <ul id="drustveneMreze">
+            <li><a href="https://www.instagram.com/vqnjq" target="_blank"><span><i class="fab fa-instagram"></i></span></a></li>
+            <li><a href="https://www.linkedin.com/in/vanja-cvijetic/" target="_blank"><i class="fab fa-linkedin"></i></a></li>       
+        </ul>
+
+        <img src="img/cvet.png" alt="cvet" height="18px" width="18px">
+
+        <ul>
+            <li><a href="index.html"><span>Početna</span></a></li>
+            <li><a href="biografija.html#logo">Biografija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <p>
+            <img class="donjeSlike" src="img/cvet.png" alt="cvet" height="18px" width="18px">
+            &copy 2019 Vanja Cvijetić, NRT-29/17
+            <img class="donjeSlike" src="img/cvet.png" alt="cvet" height="18px" width="18px">
+        </p>
+    </div>
+   
+</body>
+</html>

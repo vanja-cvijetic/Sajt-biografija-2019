@@ -1,0 +1,162 @@
+* { box-sizing: border-box; }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.div-sa-slikom{
+    width: 100%;
+    background-image: url('../img/ruze.jpg');
+    background-size: cover;
+    border-bottom: 1px solid #B83E74;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: #F1D9E7;
+    margin-top: 1em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: #F1D9E7;
+}
+
+/* DVA DIVA */
+
+.div-sadrzaj{
+    float: left;
+    width: 50%;
+    text-align: center; /* slika u centru diva */
+    overflow: auto;
+    height: 100%;
+}
+
+.div-sadrzaj::after {
+    clear: both;
+}
+
+.div-sadrzaj img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: 1.5em auto;
+    border: 3px dashed #F1D9E7;
+    transition: all 0.3s;
+}
+
+.link-slika{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.link-slika:hover{
+    opacity: 1;
+}
+
+.div-sadrzaj p{
+    text-align: center;
+    color: #F1D9E7;
+    width: 90%;
+    margin: 0 auto; 
+    
+}
+
+.dugme{
+    max-width: 100%;
+    display: block;
+    color: #B83E74;
+    background-color: #F1D9E7;
+    width: 200px;
+    margin: 1em auto 0;
+    padding: 0.2em;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dugme:hover{
+    color: #8F0051;
+}
+
+
+/* KONTAKT KARTICA */
+
+.kontakt h5{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.kontakt{
+    text-align: center;
+    background-color: #363638;
+    color: #F1D9E7;
+    padding: 1em 0;
+    width: 40%;
+    margin: 2em auto;
+    border: 1px solid #B83E74;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.kontakt:hover{
+    box-shadow: 5px 4px 3px grey;
+}
+
+.telmail{
+    text-decoration: none;
+    color: white;
+    transition: 0.7s;
+    margin-top: 0.7em;
+}
+
+.telmail:hover{
+    letter-spacing: 0.1em;
+}
+
+.kontakt p{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.kontakt p a{
+    color: #B83E74;
+    text-align: center;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1545px){
+    .div-sadrzaj img{
+        width: 40%;
+    }
+
+    .div-sadrzaj p{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .div-sadrzaj{
+        display: block;
+        width: 100%;
+        margin-top: 2em;
+        font-size: 1.1em;
+    }
+
+    .div-sadrzaj a img{
+        width: 60% !important;
+    }
+
+    .kontakt{
+        width: 80% !important;
+        margin: 2em auto;
+    }
+
+}

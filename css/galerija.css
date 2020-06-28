@@ -1,0 +1,235 @@
+*{ box-sizing: border-box; }
+
+.col-l-1 {width: 8.33%;} 
+.col-l-2 {width: 16.66%;} 
+.col-l-3 {width: 25%;} 
+.col-l-4 {width: 33.33%;} 
+.col-l-5 {width: 41.66%;} 
+.col-l-6 {width: 50%;} 
+.col-l-7 {width: 58.33%;} 
+.col-l-8 {width: 66.66%;} 
+.col-l-9 {width: 75%;} 
+.col-l-10 {width: 83.33%;} 
+.col-l-11 {width: 91.66%;} 
+.col-l-12 {width: 100%;}
+
+
+[class*="col-"]{ 
+    float: left; 
+    padding: 1em;
+} 
+
+/* Glavni naslov */
+
+#naslovStrane{
+    text-align: center;
+    text-transform: uppercase;
+    color: #8F0051;
+    padding: 2.5em;
+}
+
+#naslovStrane h1{
+    display: inline;
+    font-size: 2em;
+}
+
+/* Sadrzaj */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+.col-l-3 img{
+    max-width: 100%;
+    border: 2px dashed #B83E74;
+    transition: 0.6s;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 0.5s;
+}
+
+.col-l-3 img:hover{
+    opacity:1;
+}
+
+.col-l-3 p{
+    text-align: center;
+    color: #8F0051;
+    padding-top: 0.8em;
+}
+
+.col-l-3 img:hover{
+    transform: scale(1.1);
+    border-radius: 5%;
+}
+
+/* Slajder */
+
+.containerSlajdera{
+    width: 80%;
+    margin: 0 auto 6em;
+    position: relative;
+    height: 50em;
+    background-color: #F1D9E7;;
+    border: 3px solid #8F0051;
+}
+
+.slikaUSlajderu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slikaUSlajderu img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Input radio button za koji vezujem labele */
+#slika1, #slika2, #slika3, #slika4, #slika5, #slika6, 
+#slika7, #slika8, #slika9, #slika10, #slika11, #slika12{
+    display: none;
+} 
+
+/* Labele */
+.prethnodna, .sledeca{
+    width: 1.5em;
+    height: 100%;
+    position: absolute; /* dete diva slikeUSlajderu */
+    top: 0;
+    background-color: rgba(255,255,255,0);
+    z-index: 999;
+    cursor: pointer;
+    font-size: 6em;
+    color: #F1D9E7;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 9em;
+}
+
+.prethnodna:hover, .sledeca:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.prethnodna{
+    left:0;
+    text-align: right;
+}
+
+.sledeca{
+    right: 0;
+    text-align: left;
+}
+
+.donjaNavigacija{
+    width: 100%;
+    height: 11px;
+    position: absolute;
+    bottom: 12%; 
+    text-align: center;
+    z-index: 1000;
+}
+
+.donjaNavLabela{
+    position: relative;
+    top: 1em;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid #F1D9E7;
+    cursor: pointer;
+}
+
+#slika1:checked ~ #pic1,
+#slika2:checked ~ #pic2,
+#slika3:checked ~ #pic3,
+#slika4:checked ~ #pic4,
+#slika5:checked ~ #pic5,
+#slika6:checked ~ #pic6,
+#slika7:checked ~ #pic7,
+#slika8:checked ~ #pic8,
+#slika9:checked ~ #pic9,
+#slika10:checked ~ #pic10,
+#slika11:checked ~ #pic11,
+#slika12:checked ~ #pic12{
+    z-index: 9;
+}
+
+#slika1:checked ~ .donjaNavigacija #tacka1,
+#slika2:checked ~ .donjaNavigacija #tacka2,
+#slika3:checked ~ .donjaNavigacija #tacka3,
+#slika4:checked ~ .donjaNavigacija #tacka4,
+#slika5:checked ~ .donjaNavigacija #tacka5,
+#slika6:checked ~ .donjaNavigacija #tacka6,
+#slika7:checked ~ .donjaNavigacija #tacka7,
+#slika8:checked ~ .donjaNavigacija #tacka8,
+#slika9:checked ~ .donjaNavigacija #tacka9,
+#slika10:checked ~ .donjaNavigacija #tacka10,
+#slika11:checked ~ .donjaNavigacija #tacka11,
+#slika12:checked ~ .donjaNavigacija #tacka12{
+    background-color: #F1D9E7;
+}
+
+@media only screen and (min-width: 1660px){
+    .containerSlajdera{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px ){
+    .col-m-1 {width: 8.33%;} 
+    .col-m-2 {width: 16.66%;} 
+    .col-m-3 {width: 25%;} 
+    .col-m-4 {width: 33.33%;} 
+    .col-m-5 {width: 41.66%;} 
+    .col-m-6 {width: 50%;} 
+    .col-m-7 {width: 58.33%;} 
+    .col-m-8 {width: 66.66%;} 
+    .col-m-9 {width: 75%;} 
+    .col-m-10 {width: 83.33%;} 
+    .col-m-11 {width: 91.66%;} 
+    .col-m-12 {width: 100%;}   
+
+    .containerSlajdera{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px ){
+    .col-s-1 {width: 8.33%;} 
+    .col-s-2 {width: 16.66%;} 
+    .col-s-3 {width: 25%;} 
+    .col-s-4 {width: 33.33%;} 
+    .col-s-5 {width: 41.66%;} 
+    .col-s-6 {width: 50%;} 
+    .col-s-7 {width: 58.33%;} 
+    .col-s-8 {width: 66.66%;} 
+    .col-s-9 {width: 75%;} 
+    .col-s-10 {width: 83.33%;} 
+    .col-s-11 {width: 91.66%;} 
+    .col-s-12 {width: 100%;}
+
+    .col-s-12 img{
+        margin-bottom: 0.7em;
+    }
+    
+    .containerSlajdera{
+        display: none;
+    }
+
+    .container{
+        display: block;
+    }
+}
+
+

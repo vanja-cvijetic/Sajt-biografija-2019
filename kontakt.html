@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Strana za kontakt - adresa, email, broj telefona.">
+    <meta name="keywords" content="kontakt, adresa, email, telefon, lični podaci">
+    <meta name="author" content="Vanja Cvijetić | NRT-29/17 | vanjaxcv@gmail.com">
+
+    <title>Vanja Cvijetić | Kontakt</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+
+    <link rel="shortcut icon" href="img/cvet.ico">
+</head>
+<body>
+
+    <!-- LOGO -->
+    <div id="logo">
+        <a href="index.html"><img src="img/logo.png" id="logo-img" 
+        alt="Vanja Cvijetić - logo" height="60px" width="300px"></a>  
+    </div>
+
+    <!-- NAVIGACIJA -->
+    <div class="nav">
+        <label for="hamb-meni" id="labela"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamb-meni">
+        
+        <div class="meni">      
+            <a href="index.html">Početna</a>
+            <a href="biografija.html">Biografija</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="hobi.html">Hobi</a>
+            <a href="kontakt.html" class="active">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- SADRŽAJ -->
+
+    <div id="naslovStrane">
+        <img src="img/cvet.png" alt="cvet" width="25px">
+        <h1>Kontakt</h1>
+        <img src="img/cvet.png" alt="cvet" width="25px">
+    </div>
+
+    <div class="container">
+
+        <div class="divZaFormu col-l-6 col-s-12">
+            <form action="">
+                <h5>Pošaljite mi poruku!</h5>
+                    
+                <div>
+                    <label for="imePrezime"><i class="far fa-user"></i> Ime i prezime: *</label>
+                    <input type="text" id="imePrezime" placeholder=" Ime i prezime" required>
+                </div> 
+                    
+                <div>
+                    <label for="mail"><i class="fas fa-at"></i> E-mail adresa: *</label>
+                    <input type="email" id="mail" placeholder=" primer@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="naslov"><i class="far fa-edit"></i> Naslov poruke: *</label>
+                    <input type="text" id="naslov" placeholder=" Naslov" required>
+                </div>
+
+                <div>
+                    <label for="poruka"><i class="far fa-comment-alt"></i> Poruka: *</label>
+                    <textarea cols="30" rows="10" id="poruka"></textarea required>
+                </div>
+                                            
+                <button type="submit" onclick="posalji()">Pošalji <i class="far fa-paper-plane"></i></button>   
+                <button type="reset" id="dugmeObrisi" onclick="obrisi()">Obriši <i class="far fa-trash-alt"></i></button>      
+            </form>
+        </div>
+
+        <div class="divZaAdresu col-l-6 col-s-12">
+            <h5>Lični podaci</h5>
+
+            <p>Ime i prezime: <span>Vanja Cvijetić</span> </p>
+            <p>Broj telefona: <span><a class="telmail" href="tel:+38162493103">+381 62 493 103</a></span> </p>
+            <p>E-mail adresa: <span><a class="telmail" href="mailto: vanjaxcv@gmail.com"> vanjaxcv@gmail.com</a> </p>
+            <p>Adresa: <span>Bilogorska 1A <br> 11211 Borča</span></p>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.7745445056444!2d20.467849515724136!3d44.86688438112033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a64bc3f1b9243%3A0x9cac99adee331be0!2z0JHQuNC70L7Qs9C-0YDRgdC60LAgMWEsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1548091151360" 
+                max-width="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+   <div style="clear:both"></div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <img src="img/cvet.png" alt="cvet" height="18px" width="18px">
+        
+        <ul id="drustveneMreze">
+            <li><a href="https://www.instagram.com/vqnjq" target="_blank"><span><i class="fab fa-instagram"></i></span></a></li>
+            <li><a href="https://www.linkedin.com/in/vanja-cvijetic/" target="_blank"><i class="fab fa-linkedin"></i></a></li>       
+        </ul>
+
+        <img src="img/cvet.png" alt="cvet" height="18px" width="18px">
+
+        <ul>
+            <li><a href="index.html"><span>Početna</span></a></li>
+            <li><a href="biografija.html">Biografija</a></li>
+            <li><a href="kontakt.html#logo">Kontakt</a></li>
+        </ul>
+        <p>
+            <img class="donjeSlike" src="img/cvet.png" alt="cvet" height="18px" width="18px">
+            &copy 2019 Vanja Cvijetić, NRT-29/17
+            <img class="donjeSlike" src="img/cvet.png" alt="cvet" height="18px" width="18px">
+        </p>
+    </div>
+   
+    <script> 
+        function obrisi() { 
+            document.getElementById("imePrezime").value = "";
+            document.getElementById("mail").value = "";
+            document.getElementById("naslov").value = "";
+            document.getElementById("poruka").value = "";
+        }
+    
+        function posalji() {
+            var ime = document.getElementById("imePrezime").value;
+            var mail = document.getElementById("mail").value;
+            document.getElementById("naslov").value;
+            document.getElementById("poruka").value;
+             
+            if(ime=="" || mail=="" || naslov=="" || poruka=="") {
+                alert("Niste popunili sva polja!");            
+            }
+        }
+    </script>
+    
+</body>
+</html>
